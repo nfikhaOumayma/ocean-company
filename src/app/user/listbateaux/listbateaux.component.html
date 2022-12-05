@@ -1,0 +1,36 @@
+<div style="padding: 20px;text-align: center;"><h2>  
+    Trouvez les meilleurs annonces ici ! </h2>
+    <img src="../../../assets/annonce.jpg" alt="Logo" style="width:60px;" class="rounded-pill"> 
+</div>
+
+<!----------- boutons de filtration -->
+<div class="row" style="margin-left:140px;">
+    <div class="col">
+        <label style="padding-right: 10px;"><em> Filtrer par catégorie</em></label> 
+        <input type="search" [(ngModel)]="search" > 
+        <button type="submit" (click)="filter()"class="btn btn-warning ">search Categorie</button>
+    </div> 
+    <div  class="col ">
+        <label style="padding-right: 10px;"><em>Filtrer par marque</em> </label>
+        <input type="search" [(ngModel)]="searchbrand">
+        <button type="submit" (click)="filterbymarque()"class="btn btn-warning ">search Brand</button>
+    </div>
+</div>
+<br>
+ <!-- fin div boutons de filtration-->
+
+
+<!-- list des bateaux -->
+<div class="box m-5">
+    <div class="row">
+        <div *ngFor="let b of lesbateaux" class="col" >
+            <app-bateau [bateau]="b"></app-bateau>
+            <button [routerLink]="['/selectedbateau',b.id]" style="margin-left: 160px;" class="btn btn-dark btn-sm">Voir detail</button>
+        </div>  
+    </div>
+</div>
+<!-- fin list des bateaux -->
+
+
+<app-footer></app-footer> 
+

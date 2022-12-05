@@ -1,0 +1,28 @@
+
+ <div class="card ">
+   <div class="card-header text-center">N°{{bateau.id}}<br>
+      <h1>{{bateau.libelle}}</h1><i class="fa-regular fa-sailboat"></i>
+   </div>
+   <div class="card-body row" *ngIf="bateau">
+      <div  class=" row" >
+         <div class="col"><img  class="rounded" [src]="bateau.image"></div>
+         <div class="col" style="float:right">
+            <div class="col"><h3>Marque</h3> {{bateau.marque}}</div>
+            <div class="col"><h3>Catégorie</h3> {{bateau.categorie}}</div>
+            <div ><h3>Prix</h3><span class="bg-warning">{{bateau.prix|price}} </span> </div>
+            <h3>Description </h3>{{bateau.desciption}}
+         </div>
+      </div>
+   </div>
+   <div class="card-footer text-center">
+      <button  class="btn btn-dark  " routerLink="/listbateaux">Retour</button><br>
+   </div>
+</div>
+
+
+
+
+
+
+
+<app-footer></app-footer>

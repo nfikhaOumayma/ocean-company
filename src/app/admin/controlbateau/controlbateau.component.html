@@ -1,0 +1,93 @@
+<div id="container" class="card">
+    <div class="card-header text-white bg-info">
+        Enregistrer les données du nouveau bateau
+    </div>
+    <div class="card-body">
+        <form   novalidate (ngSubmit)="onSubmit()" [formGroup]="registerForm">
+            
+            <div>
+                <label>Libelle</label>
+                <input type="text" class="form-control" placeholder="saisir libelle" formControlName="libelle"> 
+                <div *ngIf="libelle&& libelle.errors?.['required'] &&libelle.touched" class="alert alert-danger">
+                    le libelle est obligatoire!
+                </div>
+                <div *ngIf="libelleisValid()" class="alert alert-warning">
+                    le libelle doit etre alphabitique!
+                </div>
+            </div>
+
+            <div>
+                <label>Marque</label>
+                <input type="text" class="form-control" placeholder="marque" formControlName="marque"> 
+                <div *ngIf="marque&& marque.errors?.['required'] &&marque.touched" class="alert alert-danger">
+                    la marque est obligatoire!
+                </div>
+                <div *ngIf="isValidPattern()" class="alert alert-danger">
+                    la marque doit etre alphabitique!
+                </div>
+            </div>
+            <div>
+                <label>categorie</label>
+                <input type="text" class="form-control" placeholder="categorie" formControlName="categorie"> 
+                
+                <div *ngIf="categorie&& categorie.errors?.['required'] &&categorie.touched" class="alert alert-danger">
+                    la categorie est obligatoire!
+                </div>
+                
+            </div>
+            <div>
+                <label>Image</label>
+                <input type="text" class="form-control" placeholder="assets/bateau..." formControlName="image"> 
+                <div *ngIf="image&& image.errors?.['required'] &&image.touched" class="alert alert-danger">
+                    Url de l'image est obligatoire!
+                </div>
+                <div *ngIf="imageisValid()" class="alert alert-danger">
+                   forme de lien incorrecte!
+                </div>
+            </div>
+
+            <div>
+                <label>Prix</label>
+                <input type="number" class="form-control" placeholder="Prix" formControlName="prix"> 
+                <div *ngIf="prix && prix.errors?.['required'] && prix.touched" class="alert alert-danger">
+                    Le prix est obligatoire!
+                </div>
+            </div>
+            <div>
+                <label>description</label>
+                <input type="text" class="form-control" placeholder="description" formControlName="desciption"> 
+                <div *ngIf="prix && prix.errors?.['required'] && prix.touched" class="alert alert-danger">
+                    La description est  est obligatoire!
+                </div>
+            </div>
+
+            <div formArrayName="comments">
+                <div *ngFor="let d of comments.controls;index as i">
+                    <div [formGroupName]="i">
+                        <label>Etat</label>
+                        <input type="text" formControlName="etat" class="form-control" placeholder="true/false">
+                        <label>date de fabrication:</label>
+                        <input type="date" formControlName="date" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <input type="button" value="Ajouter commentaire" class="btn btn-secondary btn-sm" (click)="ajoutercomments()"> <br>
+        </form>
+
+<input type="button" (click)="onAjouter()" value="Ajouter" class="btn btn-secondary btn-sm" [disabled]="!registerForm.valid"> <br>
+<input type="button"  (click)="onVider()" class="btn btn-warning" value="Vider"><br>
+</div>
+</div>
+
+<div class="box">
+<h3>Modifier/Supprimer les bateaux</h3>
+    <ul>
+        <li *ngFor= "let b of bateau">
+            {{b.id}}-{{b.libelle}}-{{b.categorie}}-{{b.marque}}--{{b.prix}}
+           <input type="button"  (click)="onSupprimer(b.id)" class="btn btn-danger" value="Supprimer"> <br>
+           <input type="button"  (click)="onModifier(b.id)" class="btn btn-warning" value="modifier">
+            
+        </li>
+    </ul>
+</div>
+ 

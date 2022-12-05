@@ -1,0 +1,26 @@
+.container{text-align: center;padding: 100px; align-items: center;
+ 
+}
+.container div{font-size: 150px;font-family: Geneva;
+        
+
+}
+.container p{font-size: 20px ; font-family: Century Gothic;
+
+      
+}
+img{
+    width: 1473px; ;
+    height: 500px; ;
+    top: 0%;
+    }
+
+    body{
+  text-align :center;
+  background-image :url(../../../assets/ocean3.webp);
+  background-size :cover;
+  background-position :50%; 
+   } 
+app-footer{
+  margin-bottom: 0px;
+}

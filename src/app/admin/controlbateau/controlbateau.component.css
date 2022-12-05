@@ -1,0 +1,12 @@
+input.ng-valid{ border-left: 3px solid green;}
+input.ng-invalid{ border-left: 3px solid red;}
+.box{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.card{
+    margin: 20px;
+    margin-left: 30%;
+    padding: 0px;
+    width: 500px;
+}

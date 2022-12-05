@@ -1,0 +1,22 @@
+
+  <div class="card">
+      <div class="card-header">
+          <span Class="badge bg-warning">N°{{bateau.id }}</span><br>
+          <span Class="badge bg-dark" style="margin-left:160px">{{bateau.libelle | uppercase }}</span><br>
+       </div>
+      <div class="card-body">
+          <img  class="rounded" [src]="bateau.image"><br>
+          <strong>Marque:</strong>{{bateau.marque| uppercase}}<br>
+          <strong>Catégorie:</strong>{{bateau.categorie| uppercase}}<br>
+          <strong> Prix:</strong>{{bateau.prix | price}}
+      </div>
+      <div class="card-footer" >
+          <a value="Voir commantaire" class="link-warning" (click)="aff_cmt()" style="margin-left:200px;">Date et Disponibilité</a><br>
+        <ul *ngIf="aux">
+          <li *ngFor="let cmt of bateau.comments">
+            <app-commentaire [cmt]="cmt" style="color:white;"></app-commentaire>
+          </li>
+        </ul> 
+     </div>
+ </div>
+ 

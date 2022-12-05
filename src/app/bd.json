@@ -1,0 +1,152 @@
+{
+  "bateau": [
+    {
+      "id": 101,
+      "libelle": "ALTEYA",
+      "marque": "Lagoon",
+      "categorie": "yacht a moteur",
+      "prix": 800000,
+      "image": "assets/bateau1.png",
+      "desciption": "C'est un motoryacht ultramoderne offrant un tenue en mer exemplaire un niveau de confort inégalé et un programme de personnalisation sur mesure. Avec son design dynamique et élégant ce yacht suit les codes stylistiques de la nouvelle gamme Power comprenant Facilement manœuvrable ce catamaran de grand luxe est un choix idéal pour naviguer avec ou sans équipage.",
+      "comments": [
+        {
+          "etat": true,
+          "date": "Date de fabrication :12/13/2015"
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "libelle": "SIRIUS",
+      "marque": "carolina",
+      "categorie": "yacht a moteur",
+      "prix": 200000,
+      "image": "assets/bateau2.jpg",
+      "desciption": "C'est un motoryacht ultramoderne offrant un tenue en mer exemplaire un niveau de confort inégalé et un programme de personnalisation sur mesure. Avec son design dynamique et élégant ce yacht suit les codes stylistiques de la nouvelle gamme Power comprenant Facilement manœuvrable ce catamaran de grand luxe est un choix idéal pour naviguer avec ou sans équipage.",
+      "comments": [
+        {
+          "etat": true,
+          "date": "Date de fabrication :12/13/2015"
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "libelle": "Blue Marlin",
+      "marque": "carolina",
+      "categorie": "zodiac",
+      "prix": 60000,
+      "image": "assets/bateau3.jpg",
+      "desciption": "Ce zodiac 400 aux allures de petit bolide tendance vous sera bien utile pour vous évader le temps d’une escapade dans les plus beaux endroits cachés du monde. Son équipement très complet (console suréquipée, 3 sièges, banquette confortable, wings en polyester) vous séduiront dès le premier essai.",
+      "comments": [
+        {
+          "etat": true,
+          "date": "Date de fabrication :1/1/2014"
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "libelle": "Didon",
+      "marque": "Lagoon",
+      "categorie": "zodiac",
+      "prix": 500000,
+      "image": "assets/bateau4.jpg",
+      "desciption": "Ce zodiac 400 aux allures de petit bolide tendance vous sera bien utile pour vous évader le temps d’une escapade dans les plus beaux endroits cachés du monde. Son équipement très complet (console suréquipée, 3 sièges, banquette confortable, wings en polyester) vous séduiront dès le premier essai.",
+      "comments": [
+        {
+          "etat": true,
+          "date": "Date de fabrication :12/1/2014"
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "libelle": "Ferrando",
+      "marque": "yamaha",
+      "categorie": "yacht a moteur",
+      "prix": 500000,
+      "image": "assets/bateau5.png",
+      "desciption": "c'est un motoryacht ultramoderne offrant un tenue en mer exemplaire un niveau de confort inégalé et un programme de personnalisation sur mesure. Avec son design dynamique et élégant ce yacht suit les codes stylistiques de la nouvelle gamme Power comprenant Facilement manœuvrable ce catamaran de grand luxe est un choix idéal pour naviguer avec ou sans équipage.",
+      "comments": [
+        {
+          "etat": true,
+          "date": "Date de fabrication :12/1/2014"
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "libelle": "QUEEN ELIZABETH",
+      "marque": "Lagoon",
+      "categorie": "yacht a voil",
+      "prix": 18000000,
+      "etat": true,
+      "image": "assets/bateau6.jpg",
+      "desciption": "c'est un motoryacht ultramoderne offrant un tenue en mer exemplaire un niveau de confort inégalé et un programme de personnalisation sur mesure. Avec son design dynamique et élégant ce yacht suit les codes stylistiques de la nouvelle gamme Power comprenant Facilement manœuvrable ce catamaran de grand luxe est un choix idéal pour naviguer avec ou sans équipage.",
+      "comments": [
+        {
+          "etat": true,
+          "date": "Date de fabrication :12/1/2014"
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "libelle": "Meduza",
+      "marque": "Lagoon",
+      "categorie": "yacht a moteur",
+      "prix": 90000000,
+      "etat": true,
+      "image": "assets/bateau7.jpg",
+      "desciption": "c'est un motoryacht ultramoderne offrant un tenue en mer exemplaire un niveau de confort inégalé et un programme de personnalisation sur mesure. Avec son design dynamique et élégant ce yacht suit les codes stylistiques de la nouvelle gamme Power comprenant Facilement manœuvrable ce catamaran de grand luxe est un choix idéal pour naviguer avec ou sans équipage.",
+      "comments": [
+        {
+          "etat": true,
+          "date": "Date de fabrication :3/6/2018"
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "libelle": "Carthage",
+      "marque": "yamaha",
+      "categorie": "yacht a voil",
+      "prix": 500000,
+      "image": "assets/bateau8.jpeg",
+      "desciption": "c'est un motoryacht ultramoderne offrant un tenue en mer exemplaire un niveau de confort inégalé et un programme de personnalisation sur mesure. Avec son design dynamique et élégant ce yacht suit les codes stylistiques de la nouvelle gamme Power comprenant Facilement manœuvrable ce catamaran de grand luxe est un choix idéal pour naviguer avec ou sans équipage.",
+      "comments": [
+        {
+          "etat": true,
+          "date": "Date de fabrication :12/12/2019"
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "libelle": "The king",
+      "marque": "yamaha",
+      "categorie": "zodiac",
+      "prix": 500000,
+      "image": "assets/bateau9.jpg",
+      "desciption": "Ce zodiac 400 aux allures de petit bolide tendance vous sera bien utile pour vous évader le temps d’une escapade dans les plus beaux endroits cachés du monde. Son équipement très complet (console suréquipée, 3 sièges, banquette confortable, wings en polyester) vous séduiront dès le premier essai.",
+      "comments": [
+        {
+          "etat": false,
+          "date": "Date de fabrication :12/1/2014"
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id":1,
+      "username": "oumayma",
+      "pwd": "oumaymaadmin"
+    },
+    { "id":2,
+      "username": "youssef",
+      "pwd": "youssefadmin"
+    }
+  ]
+}
